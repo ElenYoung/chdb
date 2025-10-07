@@ -1,0 +1,11 @@
+LICENSE.txt
+setup.py
+chdb/__init__.py
+chdb/chdb_commands.py
+chdb/set_logging.py
+chdb/utils.py
+quantchdb.egg-info/PKG-INFO
+quantchdb.egg-info/SOURCES.txt
+quantchdb.egg-info/dependency_links.txt
+quantchdb.egg-info/requires.txt
+quantchdb.egg-info/top_level.txt
