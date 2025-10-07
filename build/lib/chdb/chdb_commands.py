@@ -16,7 +16,7 @@ class ClickHouseDatabase:
         config: Optional[Dict] = None,
         log_file: str = get_project_dir()+'//logs//clickhouse_db.log',
         terminal = False,
-        file_log = True,
+        file_log = False,
         auto_time_process = True
     ):
         self.config = config or self._get_config_from_env()

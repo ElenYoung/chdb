@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: quantchdb
-Version: 0.1.0
+Version: 0.1.2
 Summary: A Well-Encapsulated ClickHouse Database APIs Lib
 Home-page: https://github.com/ElenYoung/chdb
 Author: Young

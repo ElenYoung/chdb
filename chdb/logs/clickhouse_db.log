@@ -1,6 +1,0 @@
-2025-10-07 21:22:05,674 - INFO - Connected to ClickHouse database: stocks (chdb_commands.py:45)
-2025-10-07 21:22:42,980 - INFO - Connected to ClickHouse database: stocks (chdb_commands.py:45)
-2025-10-07 21:24:15,794 - INFO - Connected to ClickHouse database: stocks (chdb_commands.py:45)
-2025-10-07 21:25:33,119 - INFO - Connected to ClickHouse database: stocks (chdb_commands.py:45)
-2025-10-07 21:25:52,199 - INFO - Connected to ClickHouse database: stocks (chdb_commands.py:45)
-2025-10-07 21:26:06,514 - INFO - Connected to ClickHouse database: stocks (chdb_commands.py:45)
