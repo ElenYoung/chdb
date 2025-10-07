@@ -10,8 +10,14 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/my_package",
     packages=find_packages(),   
-    install_requires=[          
-        "requests>=2.25.1"
+    install_requires=[   
+        "numpy>=2.2.6",       
+        "clickhouse-driver->=0.2.9",
+        "pandas>=2.2.3",
+        "pytz>=2025.2",
+        "coloredlogs>=15.0.1",
+        "python-dotenv>=1.1.1",
+        "dotenv>=0.9.9"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

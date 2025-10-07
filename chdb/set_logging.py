@@ -1,5 +1,4 @@
 import logging
-import colorlog
 import coloredlogs
 import os
 

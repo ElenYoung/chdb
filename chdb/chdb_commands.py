@@ -5,8 +5,7 @@ from clickhouse_driver.errors import Error as ClickHouseError
 from contextlib import contextmanager
 from .set_logging import get_logger
 from dotenv import load_dotenv
-from typing import Optional, List, Dict, Tuple
-import inspect
+from typing import Optional, List, Dict
 from .utils import *
 
 load_dotenv()
