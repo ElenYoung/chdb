@@ -8,7 +8,7 @@ setup(
     description="A Well-Encapsulated ClickHouse Database APIs Lib",
     long_description=open("README.md").read(),  
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/my_package",
+    url="https://github.com/ElenYoung/chdb",
     packages=find_packages(),   
     install_requires=[   
         "numpy>=2.2.6",       
