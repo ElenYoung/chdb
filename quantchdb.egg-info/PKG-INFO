@@ -1,12 +1,27 @@
+Metadata-Version: 2.1
+Name: quantchdb
+Version: 0.1.4
+Summary: A Well-Encapsulated ClickHouse Database APIs Lib
+Home-page: https://github.com/ElenYoung/chdb
+Author: Young
+Author-email: 13515360252@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>=2.2.6
+Requires-Dist: clickhouse-driver>=0.2.9
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pytz>=2025.2
+Requires-Dist: coloredlogs>=15.0.1
+Requires-Dist: python-dotenv>=1.1.1
+Requires-Dist: dotenv>=0.9.9
+
 # chdb: A Well-Encapsulated ClickHouse Database APIs Lib
 
 ## Quick Start
-
-Install chdb:
-
-```
-pip install quantchdb==0.1.4  -i https://pypi.org/simple
-```
 
 An example of how to use chdb:
 
