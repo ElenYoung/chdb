@@ -1,18 +1,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="chdb",          
+    name="quantchdb",          
     version="0.1.0",            
     author="Young",
     author_email="13515360252@163.com",
     description="A Well-Encapsulated ClickHouse Database APIs Lib",
-    long_description=open("README.md").read(),  
+    long_description=open("README.md", encoding="utf-8").read(),  
     long_description_content_type="text/markdown",
     url="https://github.com/ElenYoung/chdb",
     packages=find_packages(),   
     install_requires=[   
         "numpy>=2.2.6",       
-        "clickhouse-driver->=0.2.9",
+        "clickhouse-driver>=0.2.9",
         "pandas>=2.2.3",
         "pytz>=2025.2",
         "coloredlogs>=15.0.1",
