@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="quantchdb",          
-    version="0.1.4",            
+    version="0.1.5",            
     author="Young",
     author_email="13515360252@163.com",
     description="A Well-Encapsulated ClickHouse Database APIs Lib",
@@ -11,9 +11,9 @@ setup(
     url="https://github.com/ElenYoung/chdb",
     packages=find_packages(),   
     install_requires=[   
-        "numpy>=2.2.6",       
+        "numpy>=2",       
         "clickhouse-driver>=0.2.9",
-        "pandas>=2.2.3",
+        "pandas>=2",
         "pytz>=2025.2",
         "coloredlogs>=15.0.1",
         "python-dotenv>=1.1.1",
@@ -24,5 +24,5 @@ setup(
         "License :: OSI Approved :: MIT License",  
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.11',  
+    python_requires='>=3.9',  
 )
