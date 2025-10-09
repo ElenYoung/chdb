@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: quantchdb
-Version: 0.1.6
+Version: 0.1.7
 Summary: A Well-Encapsulated ClickHouse Database APIs Lib
 Home-page: https://github.com/ElenYoung/chdb
 Author: Young
@@ -19,21 +19,21 @@ Requires-Dist: coloredlogs>=15.0.1
 Requires-Dist: python-dotenv>=1.1.1
 Requires-Dist: dotenv>=0.9.9
 
-# chdb: A Well-Encapsulated ClickHouse Database APIs Lib
+# quantchdb: A Well-Encapsulated ClickHouse Database APIs Lib
 
 ## Quick Start
 
 Install chdb:
 
 ```
-pip install quantchdb==0.1.4  -i https://pypi.org/simple
+pip install quantchdb==0.1.6  -i https://pypi.org/simple
 ```
 
 An example of how to use chdb:
 
 ```python
 
-from chdb import ClickHouseDatabase
+from quantchdb import ClickHouseDatabase
 
 # To connect your clickhouse database, you need to setup your config, in which the '.env' method is recommmended for security
 config = {
