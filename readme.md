@@ -1,18 +1,18 @@
-# chdb: A Well-Encapsulated ClickHouse Database APIs Lib
+# quantchdb: A Well-Encapsulated ClickHouse Database APIs Lib
 
 ## Quick Start
 
 Install chdb:
 
 ```
-pip install quantchdb==0.1.4  -i https://pypi.org/simple
+pip install quantchdb==0.1.6  -i https://pypi.org/simple
 ```
 
 An example of how to use chdb:
 
 ```python
 
-from chdb import ClickHouseDatabase
+from quantchdb import ClickHouseDatabase
 
 # To connect your clickhouse database, you need to setup your config, in which the '.env' method is recommmended for security
 config = {
