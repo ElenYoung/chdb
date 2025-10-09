@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
 Name: quantchdb
-Version: 0.1.5
+Version: 0.1.6
 Summary: A Well-Encapsulated ClickHouse Database APIs Lib
 Home-page: https://github.com/ElenYoung/chdb
 Author: Young
-Author-email: 13515360252@163.com
+Author-email: yang13515360252@163.com
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
