@@ -4,6 +4,15 @@ import os
 import inspect
 
 
+def convert_to_nullable_object(series: pd.Series) -> pd.Series:
+    """
+    将 Nullable 类型列中的 [np.nan, pd.NaT, pd.NA] 转为 None，并转为 object 类型
+    """
+    if series.isna().any():
+        series = series.astype(object).where(series.notna(), None)
+    return series
+
+
 def convert_to_shanghai(series):
     """将时间序列转换为上海时区，自动处理已有/缺失时区的情况"""
     if series.dt.tz is None:

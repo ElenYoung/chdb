@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="quantchdb",          
-    version="0.1.7",            
+    version="0.1.8",            
     author="Young",
     author_email="yang13515360252@163.com",
     description="A Well-Encapsulated ClickHouse Database APIs Lib",

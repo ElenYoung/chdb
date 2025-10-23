@@ -5,7 +5,7 @@ from clickhouse_driver.errors import Error as ClickHouseError
 from contextlib import contextmanager
 from .set_logging import get_logger
 from dotenv import load_dotenv
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Annotated
 from .utils import *
 
 load_dotenv()
@@ -85,18 +85,26 @@ class ClickHouseDatabase:
             self,
             df: pd.DataFrame,
             table_name: str,
-            columns: List[str]=None
+            columns: Annotated[list,"the columns you want to insert into table"]=None,
+            datetime_cols: Annotated[list,"the list of columns with datetime type, not date type columns which haven't got tz"]=None,
+            nullable_cols: Annotated[list, "the list of columns whose types are Nullable, not including Nullable Float"]=None
     ):
         """优化版DataFrame插入"""
         try:
             if self.auto_time_process:
-                if 'date' in df.columns:
-                    # 转换为日期类型并提取日期部分
-                    df['date'] = convert_to_shanghai(pd.to_datetime(df['date'])).dt.date
+                if datetime_cols:
+                    for datetime_col in datetime_cols:
+                        if datetime_col in df.columns:
+                            df[datetime_col] = convert_to_shanghai(pd.to_datetime(df[datetime_col]))
 
-                if 'date_time' in df.columns:
-                    # 转换为带时区的时间戳
-                    df['date_time'] = convert_to_shanghai(pd.to_datetime(df['date_time']))
+                # if 'date_time' in df.columns:
+                #     # 转换为带时区的时间戳
+                #     df['date_time'] = convert_to_shanghai(pd.to_datetime(df['date_time']))
+
+            if nullable_cols:
+                for nullable_col in nullable_cols:
+                    if nullable_col in df.columns:
+                        df[nullable_col] = convert_to_nullable_object(df[nullable_col])
 
             if columns is None:
                 columns = list(df.columns)

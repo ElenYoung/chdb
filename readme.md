@@ -5,7 +5,7 @@
 Install chdb:
 
 ```
-pip install quantchdb==0.1.6  -i https://pypi.org/simple
+pip install quantchdb==0.1.8  -i https://pypi.org/simple
 ```
 
 An example of how to use chdb:
