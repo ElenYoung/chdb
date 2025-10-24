@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+quantchdb.egg-info/PKG-INFO
+quantchdb.egg-info/SOURCES.txt
+quantchdb.egg-info/dependency_links.txt
+quantchdb.egg-info/requires.txt
+quantchdb.egg-info/top_level.txt
