@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+src/quantchdb/__init__.py
+src/quantchdb/chdb_commands.py
+src/quantchdb/set_logging.py
+src/quantchdb/utils.py
+src/quantchdb.egg-info/PKG-INFO
+src/quantchdb.egg-info/SOURCES.txt
+src/quantchdb.egg-info/dependency_links.txt
+src/quantchdb.egg-info/requires.txt
+src/quantchdb.egg-info/top_level.txt
