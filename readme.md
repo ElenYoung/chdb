@@ -5,7 +5,7 @@
 Install quantchdb:
 
 ```
-pip install quantchdb==0.1.9  -i https://pypi.org/simple
+pip install quantchdb==0.1.10  -i https://pypi.org/simple
 ```
 
 An example of how to use quantchdb:

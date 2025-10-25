@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: quantchdb
-Version: 0.1.9
+Version: 0.1.10
 Summary: A Well-Encapsulated ClickHouse Database APIs Lib
 Home-page: https://github.com/ElenYoung/chdb
 Author: Young
@@ -36,7 +36,7 @@ Dynamic: summary
 Install quantchdb:
 
 ```
-pip install quantchdb==0.1.9  -i https://pypi.org/simple
+pip install quantchdb==0.1.10  -i https://pypi.org/simple
 ```
 
 An example of how to use quantchdb:
