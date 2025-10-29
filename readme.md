@@ -15,6 +15,10 @@ An example of how to use quantchdb:
 from quantchdb import ClickHouseDatabase
 import pandas as pd
 import numpy as np
+import os 
+from dotenv import load_dotenv
+
+load_dotenv()
 ```
 
 
