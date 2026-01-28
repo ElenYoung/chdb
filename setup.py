@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="quantchdb",          
-    version="0.1.11",            
+    version="0.2.0",            
     author="Young",
     author_email="yang13515360252@163.com",
     description="A Well-Encapsulated ClickHouse Database APIs Lib",
@@ -18,7 +18,6 @@ setup(
         "pytz>=2025.2",
         "coloredlogs>=15.0.1",
         "python-dotenv>=1.1.1",
-        "dotenv>=0.9.9"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
